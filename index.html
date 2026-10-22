@@ -174,6 +174,7 @@ main{padding:12px}.viewer{position:relative;max-width:1400px;margin:auto;backgro
 <div id="cdResult" style="font-size:20px;font-weight:900;color:#062554"></div>
 </section>
 <section class="panel" id="today"><h2>📅 Aujourd’hui</h2>
+<a class="tdBtn" href="https://pascalb2211-crypto.github.io/mon-voyage-hub/" style="display:block;text-align:center;margin-bottom:12px;background:#f07b22">🧭 Mon voyage : vol, documents, programme</a>
 <div class="tdCard" id="tdStatus"></div>
 <div class="tdCard"><div class="tdRow">
  <div><label class="tdLbl" for="tdDep">Date de départ</label><input id="tdDep" type="date" class="sumSearch" style="margin:0" oninput="tdSaveDates()"></div>
@@ -673,6 +674,7 @@ function initEdit(){
   [['\uD83D\uDD17 Liens utiles','links'],['\u2611\uFE0F Ma checklist','checklist'],['\uD83D\uDCB1 Euro \u2194 Baht','convert'],['\u23F1\uFE0F Compte \u00E0 rebours','countdown'],['\u2728 Inspirations','inspire']].forEach(function(x){
    var b=document.createElement('button');b.type='button';b.textContent=x[0];b.onclick=function(){sheet.classList.remove('open');show(x[1]);};box.appendChild(b);});
   var r=document.createElement('button');r.type='button';r.textContent='\uD83E\uDDF3 Mon centre de r\u00E9servation';r.onclick=function(){sheet.classList.remove('open');go(22);};box.appendChild(r);
+  var hb=document.createElement('button');hb.type='button';hb.textContent='\uD83E\uDDED Mon voyage (vol, documents, programme)';hb.onclick=function(){location.href='https://pascalb2211-crypto.github.io/mon-voyage-hub/';};box.appendChild(hb);
   var w=document.createElement('button');w.type='button';w.textContent='\uD83C\uDF24\uFE0F M\u00E9t\u00E9o en direct';w.onclick=weather;box.appendChild(w);
   var f=document.createElement('button');f.type='button';f.textContent='\u2661 Ajouter cette page aux favoris';f.onclick=function(){sheet.classList.remove('open');toggleFavorite();};box.appendChild(f);
   sheet.classList.add('open');
